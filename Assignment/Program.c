@@ -1,7 +1,7 @@
-#include <stdio.h>
+﻿#include <stdio.h>
 #include <math.h>
 #include <stdbool.h>
-// H�m ki?m tra s? nguy�n t?
+// Hàm kiểm tra số nguyên tố
 bool kiemTraSoNguyenTo(int soBatKy) {
 	if (soBatKy <= 1) return false;
 	for (int i = 2; i <= sqrt(soBatKy); i++) {
@@ -16,32 +16,26 @@ bool kiemTraSoChinhPhuong(int soBatKy) {
 	return (sqrtSo * sqrtSo == soBatKy);
 }
 void kiemTraSoNguyen() {
-	system("cls"); //clean screen
 	int soBatKy;
 	int i = 1;
-	while (i == 1) {
-		system("cls");
-		printf("Nhap vao mot so nguyen x: ");
-		scanf("%d", &soBatKy);
-		if (soBatKy % 1 == 0) {
-			printf("So %d la so nguyen. \n", soBatKy);
-		}
-		else {
-			printf("So %d khong phai la so nguyen. \n", soBatKy);
-		} if (kiemTraSoNguyenTo(soBatKy)) {
-			printf("So %d la so nguyen to. \n", soBatKy);
-		}
-		else {
-			printf("So %d khong phai la so nguyen to. \n", soBatKy);
-		} if (kiemTraSoChinhPhuong(soBatKy)) {
-			printf("So %d la so chinh phuong. \n", soBatKy);
-		}
-		else {
-			printf("So %d khong phai la so chinh phuong. \n", soBatKy);
-		}
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
+	system("cls");
+	printf("Nhap vao mot so nguyen x: ");
+	scanf("%d", &soBatKy);
+	if (soBatKy % 1 == 0) {
+		printf("So %d la so nguyen. \n", soBatKy);
+	}
+	else {
+		printf("So %d khong phai la so nguyen. \n", soBatKy);
+	} if (kiemTraSoNguyenTo(soBatKy)) {
+		printf("So %d la so nguyen to. \n", soBatKy);
+	}
+	else {
+		printf("So %d khong phai la so nguyen to. \n", soBatKy);
+	} if (kiemTraSoChinhPhuong(soBatKy)) {
+		printf("So %d la so chinh phuong. \n", soBatKy);
+	}
+	else {
+		printf("So %d khong phai la so chinh phuong. \n", soBatKy);
 	}
 }
 void uocChungVaBoiChung() {
@@ -50,9 +44,6 @@ void uocChungVaBoiChung() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void tinhTienQuanKaraoke() {
@@ -61,9 +52,6 @@ void tinhTienQuanKaraoke() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void tinhTienDien() {
@@ -72,9 +60,6 @@ void tinhTienDien() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void doiTien() {
@@ -83,9 +68,6 @@ void doiTien() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void tinhLaiVayTien() {
@@ -94,9 +76,6 @@ void tinhLaiVayTien() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void vayTienMuaXe() {
@@ -105,9 +84,6 @@ void vayTienMuaXe() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void sapXepThongTinSinhVien() {
@@ -116,9 +92,6 @@ void sapXepThongTinSinhVien() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void xayDungGameFpoly() {
@@ -127,9 +100,6 @@ void xayDungGameFpoly() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
 void tinhToanPhanSo() {
@@ -138,33 +108,12 @@ void tinhToanPhanSo() {
 	int i = 1;
 	while (i == 1) {
 		//code
-		printf("\n");
-		printf(" Ban co muon tiep tuc kiem tra so nguyen khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
-		scanf("%d", &i);
 	}
 }
-int main()
-{
-	int chon;
-	do
-	{
-		system("cls"); //clean screen
-		printf(" ======== MENU CHUONG TRINH ======== \n");
-		printf("|1. Kiem tra so nguyen              |\n");
-		printf("|2. Tim uoc chung va boi chung      |\n");
-		printf("|3. Tinh tien quan karaoke          |\n");
-		printf("|4. Tinh tien dien                  |\n");
-		printf("|5. Doi tien                        |\n");
-		printf("|6. Tinh lai vay tien               |\n");
-		printf("|7. Vay tien mua xe                 |\n");
-		printf("|8. Sap xep thong tin sinh vien     |\n");
-		printf("|9. Xay dung game Fpoly             |\n");
-		printf("|10. Tinh toan phan so              |\n");
-		printf("|0. Thoat chuong trinh              |\n");
-		printf(" =================================== \n");
-		printf("* Chon chuc nang tren Menu [0-10]:  ");
-		scanf("%d", &chon);
-		switch (chon) {
+void lapChucNang(int chonChucNang) {
+	int tiepTuc = 1;
+	while (tiepTuc == 1) {
+		switch (chonChucNang) {
 		case 1:
 			kiemTraSoNguyen();
 			break;
@@ -197,12 +146,37 @@ int main()
 			break;
 		case 0:
 			printf("\n Ban da thoat chuong trinh. Thanks! \n");
-			break;
+			return;
 		default:
 			printf("Hay chon cac chuc nang co tren Menu. \n");
-			system("pause");
 			break;
 		}
-	} while (chon != 0);
-
+		printf("\nBan co muon tiep tuc chuc nang nay khong? [ 1 - Tiep tuc | Khac - Thoat ]: ");
+		scanf("%d", &tiepTuc);
+		system("cls");
+	}
+}
+int main()
+{
+	int chonChucNang;
+	do
+	{
+		system("cls");
+		printf(" ======== MENU CHUONG TRINH ======== \n");
+		printf("|1. Kiem tra so nguyen              |\n");
+		printf("|2. Tim uoc chung va boi chung      |\n");
+		printf("|3. Tinh tien quan karaoke          |\n");
+		printf("|4. Tinh tien dien                  |\n");
+		printf("|5. Doi tien                        |\n");
+		printf("|6. Tinh lai vay tien               |\n");
+		printf("|7. Vay tien mua xe                 |\n");
+		printf("|8. Sap xep thong tin sinh vien     |\n");
+		printf("|9. Xay dung game Fpoly             |\n");
+		printf("|10. Tinh toan phan so              |\n");
+		printf("|0. Thoat chuong trinh              |\n");
+		printf(" =================================== \n");
+		printf("* Chon chuc nang tren Menu [0-10]:  ");
+		scanf("%d", &chonChucNang);
+		lapChucNang(chonChucNang);
+	} while (chonChucNang != 0);
 }

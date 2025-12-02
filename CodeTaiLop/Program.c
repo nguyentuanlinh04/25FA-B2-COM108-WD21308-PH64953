@@ -1,5 +1,7 @@
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
 void kiemTraSoNguyen()
 {
@@ -46,8 +48,39 @@ void sapXepPhanTuMang1Chieu()
 		printf("mang[%d] = %d\n", i, integerArray[i]);
 	}
 }
-void lapChucNang(int chonChucNang)
-{
+
+void demoMang2Chieu() {
+	//string - "string.h"
+	char kyTu = 'A';
+	char mangKyTu[10] = "Anh";
+	for (int i = 0; i < 10; i++) {
+		scanf(" %c", &mangKyTu[i]);
+		if (mangKyTu[i] == '.') {
+			break;
+		}
+	}
+	//fgets(mangKyTu);
+	for (int i = 0; i < 10; i++) {
+		printf("%c", mangKyTu[i]);
+	}
+	printf("\n");
+	//puts(mangKyTu);
+	int array[2][3];
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			printf("Mang[%d][%d] = ", i, j);
+			scanf("%d", &array[i][j]);
+		}
+	}
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++) {
+			printf("%d, ", array[i][j]);
+		}
+		printf("\n");
+	}
+}
+
+void lapChucNang(int chonChucNang) {
 	int tiepTuc = 1;
 	while (tiepTuc == 1)
 	{
@@ -61,6 +94,9 @@ void lapChucNang(int chonChucNang)
 			break;
 		case 3:
 			sapXepPhanTuMang1Chieu();
+			break;
+		case 4:
+			demoMang2Chieu();
 			break;
 		case 0:
 			return;
@@ -88,6 +124,8 @@ int main()
 		printf("2. Uoc Chung Boi Chung");
 		printf("\n");
 		printf("3. Sap xep mang");
+		printf("\n");
+		printf("4. Demo Mang 2 Chieu");
 		printf("\n");
 		printf("Hay chon CN [0-3]: ");
 		scanf("%d", &chonChucNang);
