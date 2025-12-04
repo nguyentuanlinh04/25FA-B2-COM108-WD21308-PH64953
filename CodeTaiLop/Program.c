@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -80,6 +79,39 @@ void demoMang2Chieu() {
 	}
 }
 
+void demoString() {
+	//string - "string.h"
+	char mangKyTu[10];
+	while (getchar() != '\n'); // clear input buffer
+	printf("Nhap du lieu: ");
+	fgets(mangKyTu, sizeof(mangKyTu), stdin);
+	printf("%s", mangKyTu); // same as
+	//puts(mangKyTu);
+	printf("String Length: ");
+	printf("%d", strlen(mangKyTu) - 1);
+	printf("\n");
+	/*printf("String Compare The Same As: ");
+	printf("%d", strcmp( "aBc","aBc"));
+	printf("\n");
+	printf("String Compare less than: ");
+	printf("%d", strcmp( "A","B"));
+	printf("\n");
+	printf("String Compare Greater than: ");
+	printf("%d", strcmp( "C", "A"));
+	printf("\n");*/
+
+	printf("String Reverse: ");
+	printf("%s", strrev(mangKyTu));
+	printf("\n");
+	printf("String Reverse (De: ");
+	printf("%s", strrev(mangKyTu));
+	printf("\n");
+	printf("String Upper: ");
+	printf("%s", strupr(mangKyTu));
+	printf("\n");
+
+}
+
 void lapChucNang(int chonChucNang) {
 	int tiepTuc = 1;
 	while (tiepTuc == 1)
@@ -97,6 +129,9 @@ void lapChucNang(int chonChucNang) {
 			break;
 		case 4:
 			demoMang2Chieu();
+			break;
+		case 5:
+			demoString();
 			break;
 		case 0:
 			return;
@@ -126,6 +161,8 @@ int main()
 		printf("3. Sap xep mang");
 		printf("\n");
 		printf("4. Demo Mang 2 Chieu");
+		printf("\n");
+		printf("5. Demo String");
 		printf("\n");
 		printf("Hay chon CN [0-3]: ");
 		scanf("%d", &chonChucNang);
